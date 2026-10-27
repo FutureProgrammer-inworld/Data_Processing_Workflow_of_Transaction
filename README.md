@@ -642,4 +642,4 @@ Angka di atas merupakan hasil pengujian yang tercatat selama pengerjaan. Untuk p
 Proyek ini berhasil mengimplementasikan alur Data Processing Workflow yang mencakup ingestion, validasi, transformasi, pemrosesan batch dan streaming menggunakan Kafka, serta analisis data dengan DuckDB dan dbt. Hasil pengujian menunjukkan bahwa pipeline dapat memproses data dan menjalankan pengujian kualitas dengan baik. Pengembangan selanjutnya dapat difokuskan pada pengujian menggunakan dataset yang lebih besar serta peningkatan keandalan pipeline.
 ---
 
-**Catatan reproduksibilitas:** Jalankan skrip dari root proyek kecuali dinyatakan lain. Sebelum menjalankan ulang proses yang menulis data atau membangun ulang tabel, periksa kode dan konfigurasi agar artefak hasil sebelumnya tidak tertimpa tanpa sengaja. Gunakan output aktual sebagai bukti final untuk laporan.
+
