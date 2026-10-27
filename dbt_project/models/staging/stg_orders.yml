@@ -1,0 +1,26 @@
+
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Model staging untuk menstandarkan tipe data dan menyiapkan data pesanan valid."
+    columns:
+      - name: order_id
+        description: "ID unik pesanan."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "ID pelanggan pemesan."
+        data_tests:
+          - not_null
+
+      - name: order_date
+        description: "Tanggal pesanan untuk analisis penjualan harian."
+
+      - name: quantity
+        description: "Jumlah unit yang dipesan."
+
+      - name: net_amount
+        description: "Nilai pesanan setelah diskon."

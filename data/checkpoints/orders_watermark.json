@@ -1,0 +1,5 @@
+{
+  "watermark": "2026-09-10T16:30:00+00:00",
+  "lookback_days": 1,
+  "business_key": "order_id"
+}

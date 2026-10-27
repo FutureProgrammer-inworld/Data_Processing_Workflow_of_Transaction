@@ -1,0 +1,17 @@
+{
+  "source": "data\\processed\\valid_orders.parquet",
+  "output": "data\\processed\\transformed_orders.parquet",
+  "record_count": 30,
+  "unique_order_ids": 30,
+  "duplicate_order_ids": 0,
+  "gross_amount_total": 4245.83,
+  "net_amount_total": 3948.473,
+  "timestamp_timezone": "UTC",
+  "numeric_types": {
+    "quantity": "int64",
+    "unit_price": "float64",
+    "discount_pct": "float64",
+    "gross_amount": "float64",
+    "net_amount": "float64"
+  }
+}

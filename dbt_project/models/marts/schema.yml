@@ -1,0 +1,63 @@
+
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Dimensi pelanggan dengan satu baris untuk setiap customer."
+    columns:
+      - name: customer_id
+        description: "Primary key dimensi pelanggan."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_product_category
+    description: "Dimensi kategori produk dengan satu baris untuk setiap kategori."
+    columns:
+      - name: product_category
+        description: "Nama kategori produk."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: "Tabel fakta transaksi dengan satu baris untuk setiap order."
+    columns:
+      - name: order_id
+        description: "Primary key transaksi."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Foreign key yang mengacu ke dimensi pelanggan."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_id
+
+      - name: product_category
+        description: "Kategori produk pada transaksi."
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_product_category')
+                field: product_category
+
+  - name: mart_daily_sales
+    description: "Agregat penjualan berdasarkan tanggal, kategori produk, dan metode pembayaran."
+    columns:
+      - name: order_date
+        description: "Tanggal penjualan."
+
+      - name: product_category
+        description: "Kategori produk."
+
+      - name: payment_method
+        description: "Metode pembayaran."
+
+      - name: net_sales
+        description: "Total penjualan setelah diskon untuk pesanan paid dan shipped."
+  

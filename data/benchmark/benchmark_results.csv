@@ -1,0 +1,4 @@
+engine,dataset,rows,columns,file_size_bytes,repeats,median_ms,mean_ms
+Pandas,data\raw\orders.parquet,36,9,6770,10,7.7867,11.25521
+Polars eager,data\raw\orders.parquet,36,9,6770,10,3.67085,4.31638
+Polars lazy,data\raw\orders.parquet,36,9,6770,10,6.0031,5.72809

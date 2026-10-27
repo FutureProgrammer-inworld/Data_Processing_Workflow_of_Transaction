@@ -1,0 +1,33 @@
+
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Sumber data hasil validasi dan transformasi pada tahap sebelumnya."
+    tables:
+      - name: raw_orders
+        description: "Data pesanan valid hasil transformasi yang disimpan di DuckDB."
+        columns:
+          - name: order_id
+            description: "ID unik setiap pesanan."
+          - name: customer_id
+            description: "ID pelanggan yang melakukan pesanan."
+          - name: order_ts
+            description: "Timestamp pesanan."
+          - name: quantity
+            description: "Jumlah unit produk yang dipesan."
+          - name: unit_price
+            description: "Harga satuan produk."
+          - name: discount_pct
+            description: "Persentase diskon dalam rentang 0 sampai 1."
+          - name: status
+            description: "Status pesanan."
+          - name: product_category
+            description: "Kategori produk."
+          - name: payment_method
+            description: "Metode pembayaran."
+          - name: gross_amount
+            description: "Nilai pesanan sebelum diskon."
+          - name: net_amount
+            description: "Nilai pesanan setelah diskon."

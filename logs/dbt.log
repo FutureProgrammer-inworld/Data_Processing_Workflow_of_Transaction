@@ -1,0 +1,11 @@
+[0m23:06:03.286186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A628D69150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A628D63E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A628D68E10>]}
+
+
+============================== 23:06:03.298456 | e43243fa-a962-4371-87cb-17d0298a6d1b ==============================
+[0m23:06:03.298456 [info ] [MainThread]: Running with dbt=1.12.6
+[0m23:06:03.302005 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ASUS\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init dbt_project', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m23:06:03.393571 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m23:06:03.393571 [debug] [MainThread]: Command `dbt init` succeeded at 23:06:03.393571 after 0.36 seconds
+[0m23:06:03.393571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A628D6ACD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A628D6AA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A621055210>]}
+[0m23:06:03.393571 [debug] [MainThread]: Flushing usage events
+[0m23:06:05.336495 [debug] [MainThread]: An error was encountered while trying to flush usage events
